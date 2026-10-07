@@ -2,14 +2,7 @@
 local smoke = os.getenv("ENTREVEUS_SMOKE") == "1"
 local contentSmoke = os.getenv("ENTREVEUS_CONTENT_SMOKE") == "1"
 local play = os.getenv("ENTREVEUS_PLAY") == "1"
-local header
-connect(g_game, {
-    onGameStart=function()
-        if not header then header=g_ui.loadUI('/entreveus.otui',modules.game_interface.getMapPanel()) end
-        header:show()
-    end,
-    onGameEnd=function() if header then header:hide() end end
-})
+EntreVeusGuide = dofile('/orientacao.lua')
 if contentSmoke or play then
     EntreVeusEvidence = dofile('/evidence.lua')
     EntreVeusRunId = EntreVeusEvidence.runId()

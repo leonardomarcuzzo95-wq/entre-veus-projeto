@@ -55,6 +55,7 @@
 !/jogo/atualizacao-1525/cliente/evidence-tests.lua
 !/jogo/atualizacao-1525/cliente/evidence.lua
 !/jogo/atualizacao-1525/cliente/init.lua
+!/jogo/atualizacao-1525/cliente/orientacao.lua
 !/jogo/atualizacao-1525/cliente/LICENSE
 !/jogo/atualizacao-1525/infra/AGENTS.md
 !/jogo/atualizacao-1525/infra/dependencies.lock.json

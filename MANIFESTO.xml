@@ -3,20 +3,21 @@
   <escopo>Integridade dos arquivos publicos versionados; este manifesto nao calcula hash de si mesmo. Nao constitui evidencia de gameplay nem assinatura digital.</escopo>
   <arquivo caminho=".gitattributes" bytes="86" sha256="a0503fd5e5b6b2ba8367ded4dd3118d60bde2885b853cbeef4c50f3904a6b632" />
   <arquivo caminho=".github/workflows/validar.yml" bytes="1030" sha256="29c30c8bfa7f36676809ad79c7279cdeafcb7377fad2c6a3322bb7382ea21a65" />
-  <arquivo caminho=".gitignore" bytes="4512" sha256="f9cb5e707fe2164f37e88257cf47218f1e53ff38683fa3850b30932768c79c7f" />
+  <arquivo caminho=".gitignore" bytes="4560" sha256="0eea1eb7824d0f5a4574517c0ccf4fc21c892d617cc3e92ade187ba80419adb4" />
   <arquivo caminho="AGENTS.md" bytes="1974" sha256="7684b691c0a9d025a8032a167fcde9ed1d98e7121f84299b17139bcadce5d6ba" />
   <arquivo caminho="Encerrar-servidor.cmd" bytes="130" sha256="c2c877b6a22a50584939fe1464e60fb2780866cd2081eb0ad13d905c112d1ab9" />
   <arquivo caminho="evidencias.xml" bytes="3692" sha256="e6fdcafa793a946ad4d4b8a5dcd9b8f092fbdcd0b09ad2f37ea3e68af541c50e" />
   <arquivo caminho="Jogar-versao-anterior.cmd" bytes="136" sha256="8c5a50310fe25f09bfcac44fe0660454dbfce85f2c47533773e6d1a9f9e33858" />
   <arquivo caminho="Jogar.cmd" bytes="130" sha256="a2686bbba95a5cb698544c7836e04273b51b58deed4dbf93a23e643eda9ee82d" />
   <arquivo caminho="jogo/atualizacao-1525/cliente/AGENTS.md" bytes="1586" sha256="b072dbf3e900eae4dacd6b2cf0f229d1887f2dc080d0db10256a05c696b28bf3" />
-  <arquivo caminho="jogo/atualizacao-1525/cliente/content-smoke.lua" bytes="8665" sha256="2c25f6da2d4cd77563b30ede9348ffa3110f66026657b2e29917d9dd27633ac5" />
-  <arquivo caminho="jogo/atualizacao-1525/cliente/entreveus.otui" bytes="649" sha256="171d668761dd60c7fcc688242423db43ea56c3837fd6d1efd361efa6bd205cd2" />
-  <arquivo caminho="jogo/atualizacao-1525/cliente/entreveus1525rc.lua" bytes="8297" sha256="d6cbb2b41737fb360cfc2e0d85970d00d02616e9eea704624c469d1bd7ca3b4d" />
+  <arquivo caminho="jogo/atualizacao-1525/cliente/content-smoke.lua" bytes="12173" sha256="63ab74956f8d16f9442fa966f216a7a98313421ff917a78e11303c4b1fb8b449" />
+  <arquivo caminho="jogo/atualizacao-1525/cliente/entreveus.otui" bytes="985" sha256="2f5270e474a2e17e99c68ae208c282f64af1af4a13412d9d05d27ad632607572" />
+  <arquivo caminho="jogo/atualizacao-1525/cliente/entreveus1525rc.lua" bytes="8080" sha256="79806b900538bf0d7d2d747e2a0a66ca7c96892bc7c6287e8eb14bec52a14c51" />
   <arquivo caminho="jogo/atualizacao-1525/cliente/evidence-tests.lua" bytes="1952" sha256="5bdb6965e7f309225457f96addeee51ae3beb3c220b2242cbc88d8df0b3a11b8" />
   <arquivo caminho="jogo/atualizacao-1525/cliente/evidence.lua" bytes="5207" sha256="a914bcd3af6bc1203e29c8eb3d62f4c9b4f6dcce33c789506b16ce038a522426" />
   <arquivo caminho="jogo/atualizacao-1525/cliente/init.lua" bytes="6938" sha256="d24ac2fa3cd1e8d0610addf223c0f9948e33d5579e107b285fe8ac6c7eaff967" />
   <arquivo caminho="jogo/atualizacao-1525/cliente/LICENSE" bytes="1145" sha256="9dfe774a4fa5347bf63abece99c242f0b6166a206c83bcf27d4ecc0dae73a0ab" />
+  <arquivo caminho="jogo/atualizacao-1525/cliente/orientacao.lua" bytes="4529" sha256="4ea01cbc9eff4408b0a11e5cbe0a0cf674aec070024a7f249488ba7c94263f1f" />
   <arquivo caminho="jogo/atualizacao-1525/infra/AGENTS.md" bytes="680" sha256="489db25e14df9234fc9764efdf3be160184e88ea155f830167887c4cbb243db5" />
   <arquivo caminho="jogo/atualizacao-1525/infra/dependencies.lock.json" bytes="1762" sha256="428847b48e644119ea9777bb09b05df8f5fb51395e96932ffd774553a76b3ba6" />
   <arquivo caminho="jogo/atualizacao-1525/infra/generate-world.mjs" bytes="10930" sha256="cf5b5292415b50e0a5a6f75cf167766e3925ef4de317f1485ab53b9bbda9d110" />
@@ -25,7 +26,7 @@
   <arquivo caminho="jogo/atualizacao-1525/infra/login-server.mjs" bytes="3609" sha256="e307797b7e9af8f41f05c19bd76caec04034d334538a466da9a3b8f4e03dc283" />
   <arquivo caminho="jogo/atualizacao-1525/infra/Start-Upgrade.ps1" bytes="2486" sha256="a50062819a3a3061f74b800e7857815cdbe272c56bb21ccfe1b7182af23f7bed" />
   <arquivo caminho="jogo/atualizacao-1525/infra/Stop-Upgrade.ps1" bytes="1411" sha256="1dca83068672d00481ee4a63d75d1c18ed8d288544b3db1a72c3d738453e4296" />
-  <arquivo caminho="jogo/atualizacao-1525/infra/Test-Content.ps1" bytes="4005" sha256="c625dc70be3b1082c4e74c0a84304d7ad365c2c90bd96c7b0112ab7ad25854be" />
+  <arquivo caminho="jogo/atualizacao-1525/infra/Test-Content.ps1" bytes="4318" sha256="0224389c9fb74ae8f63187002e09067f8ab0475b4318652fa0710f595f60abd1" />
   <arquivo caminho="jogo/atualizacao-1525/infra/Test-EvidenceChecks.ps1" bytes="2012" sha256="fc81385ff16ea375b00864eb0fd5da1d972211a775b06ac11765154ed573e573" />
   <arquivo caminho="jogo/atualizacao-1525/infra/Verify-Upgrade.ps1" bytes="11514" sha256="ae37b5b210367ddfd08907d2e3bcf60f7610847bdccadadf25b61e3222f236c6" />
   <arquivo caminho="jogo/atualizacao-1525/servidor/AGENTS.md" bytes="4048" sha256="421950a8a70aa4ec9998d8407af82d9a9a761e5dc37c67cfc7c28385e712a37b" />
@@ -33,10 +34,10 @@
   <arquivo caminho="jogo/atualizacao-1525/servidor/data-projeto/lib/lib.lua" bytes="220" sha256="1f16443eeeddad21d32ca88a1cba08ed7e7dda4b9fc4fe0fc3a1dad6730e5964" />
   <arquivo caminho="jogo/atualizacao-1525/servidor/data-projeto/migrations/59.lua" bytes="577" sha256="cd61fa3d860e1023b4efad55162a95219e2ae0588253bc2a8aaae5685d341d95" />
   <arquivo caminho="jogo/atualizacao-1525/servidor/data-projeto/monster/eco_errante.lua" bytes="905" sha256="6cad4a8b603b740748e9c3c09a31d07b2f182b4de6e24a5b8d87eae093cbe4db" />
-  <arquivo caminho="jogo/atualizacao-1525/servidor/data-projeto/npc/maia.lua" bytes="2797" sha256="5d083097b812e67b76b81f192d1190c12965a718a6dd7f20ae9c98b58e579d6c" />
+  <arquivo caminho="jogo/atualizacao-1525/servidor/data-projeto/npc/maia.lua" bytes="3000" sha256="ba3c0a394cdc169c9a646c7c109e2a34c00ab781e82136b214af2c98098ab67b" />
   <arquivo caminho="jogo/atualizacao-1525/servidor/data-projeto/raids/raids.xml" bytes="48" sha256="2e7ce085ff7849b634a8eb834b773bf2cd9b4feea1a7b94d8ff647e52c4fe5b0" />
   <arquivo caminho="jogo/atualizacao-1525/servidor/data-projeto/scripts/lab_control.lua" bytes="587" sha256="dd5a92a7301e69f4d388afdbd8f3189b3f3dcfb8201ff975c009aa05be38bdea" />
-  <arquivo caminho="jogo/atualizacao-1525/servidor/data-projeto/scripts/porto.lua" bytes="1137" sha256="28cd7139c60d5bd78ba9b3b7e9768d17e093a1b9cfc4a8605bc13a02bc5f49a7" />
+  <arquivo caminho="jogo/atualizacao-1525/servidor/data-projeto/scripts/porto.lua" bytes="1211" sha256="e2a54556c5ad19e3e81bf12be445ffc736f9d144f9ec5af391bf0ee0e2d5386b" />
   <arquivo caminho="jogo/atualizacao-1525/servidor/data-projeto/world/entreveus-house.xml" bytes="49" sha256="412d02004ff8a86484ef57c80cc202ded2542ceebf1c6ad6e610fdcd89c5ea8a" />
   <arquivo caminho="jogo/atualizacao-1525/servidor/data-projeto/world/entreveus-monster.xml" bytes="51" sha256="6a021bb405f265fc058dcad85c27843140dd56870acfce8295a005578b317ffb" />
   <arquivo caminho="jogo/atualizacao-1525/servidor/data-projeto/world/entreveus-npc.xml" bytes="47" sha256="d5b82bf13a0eb80a11cc54f47c66e5e5cbf50a8872695ce0cbefdacb5ed737e8" />
@@ -58,14 +59,14 @@
   <arquivo caminho="jogo/infra/Stop-Lab.ps1" bytes="2150" sha256="39f26ee3b79d0717be6bb222033b99db8aba90b08d0d084d9d2123c638ad2d49" />
   <arquivo caminho="jogo/infra/Test-Client.ps1" bytes="707" sha256="5439a70bc6713857f6439205c05a2e40a73ab29e9bfb0091166fcac3c65b9742" />
   <arquivo caminho="jogo/infra/Verify-Lab.ps1" bytes="3029" sha256="ea5be295e921ea7c55f69e2a0a584be69223f2c8e16dab720cfcc407e9da6506" />
-  <arquivo caminho="jogo/LEIA-ME.md" bytes="8168" sha256="6ccdb1b4bd21dc1c21cd6b543c28d130d6f2c69241ccffeedb0a7784b226b812" />
+  <arquivo caminho="jogo/LEIA-ME.md" bytes="11240" sha256="edf5a0d49be9fb5220854888d497ade1a8f6100b494fd5762b4064c35f7c899d" />
   <arquivo caminho="projeto.xml" bytes="24210" sha256="98087f9411aebec5d62605d70da9c067c6e72816858f26ff333b7eb0ec4442cb" />
   <arquivo caminho="PUBLICAR.xml" bytes="2070" sha256="434e558561942f26798a74b34e0d17cf9d519c2cfb90be8d7e519658f62a5fca" />
   <arquivo caminho="README.md" bytes="3406" sha256="1220953d6c6bd1af82ee9895de6eb64d6beb88befea50d437216cecb848d653b" />
   <arquivo caminho="Ver-acesso.cmd" bytes="116" sha256="1d78f232f7f256dc0a2ba44404c3aba6ee9ae85d47e0e2ca0bca10c5cf255bac" />
-  <arquivo caminho="versionamento/arquivos-publicos.xml" bytes="4593" sha256="5d16422f3b01cb61b9705fc4edeab26857dcd1145635137b38cac35979897cfd" />
+  <arquivo caminho="versionamento/arquivos-publicos.xml" bytes="4665" sha256="4ec47855df362b06cbc28b5bcdfbe342ee10804794be9997ade6f50f5ed326f2" />
   <arquivo caminho="versionamento/Atualizar-Manifesto.ps1" bytes="1672" sha256="63a33b3dd1ed069c292ff2add0292a10d33a96b582022f6d16b607292b40be22" />
-  <arquivo caminho="versionamento/CONEXAO-GITHUB.xml" bytes="4525" sha256="1582bc9533e3a41d2331e798f43232f21632af311bcedcb14aec9a75ef25928c" />
+  <arquivo caminho="versionamento/CONEXAO-GITHUB.xml" bytes="4709" sha256="4aeec8a6eeb85beea6575c1f578183e0718915c4e03bdb513b7a932818204f9d" />
   <arquivo caminho="versionamento/fixtures/qa-2026-10-06.json" bytes="13635" sha256="533a785f76a153514cc6e21a52f947f22fc286f737abb6499a7acd9b6cc88d6f" />
   <arquivo caminho="versionamento/LICENCAS.xml" bytes="1279" sha256="20b98f1351da36bfc91689c4d38530213b40390d3db5077e246c2364c776d761" />
   <arquivo caminho="versionamento/templates/items-projeto.xml" bytes="359" sha256="4a881bf63763ece0184ab3eca945a778f596b16214c92e84348eb87beadc88ea" />

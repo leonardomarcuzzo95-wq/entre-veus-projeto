@@ -22,7 +22,7 @@
   <validacao_automatica>Sintaxe PowerShell, JavaScript, XML, JSON e Lua; cinco casos puros do registrador Lua; oito casos negativos do validador PowerShell; lista pública e hashes. Nenhum serviço, login ou banco é iniciado.</validacao_automatica>
   <fixture>A fixture de 06/10/2026 é uma seleção de campos do relatório real daquela data para regressão do código. O campo freshEvidence preserva a observação original e não afirma que a execução seja recente hoje. A CI não cria um teste novo de missão.</fixture>
   <limite_de_seguranca>A lista explícita e a busca por padrões conhecidos reduzem publicações acidentais; não substituem revisão humana nem garantem detecção de todo segredo possível.</limite_de_seguranca>
-  <checkpoint_do_jogo>Prompt 1 concluído. Prompt 2, de interface e orientação, é a próxima etapa. Prompt 3, de expansão do farol, permanece posterior. A conexão Git não muda essa sequência.</checkpoint_do_jogo>
+  <checkpoint_do_jogo>Prompt 1 concluído. Prompt 2 implementado e validado em uma rodada QA em 07/10/2026: orientação contextual, três atalhos ocultos e 100 XP persistidos sem duplicação. A revisão da interface e o teste de compreensão com uma pessoa iniciante estão pendentes. Prompt 3, de expansão do farol, fica após essa revisão. Detalhes e runId em jogo/LEIA-ME.md.</checkpoint_do_jogo>
   <fontes>
     <fonte>https://docs.github.com/en/actions/tutorials/build-and-test-code/powershell</fonte>
     <fonte>jogo/atualizacao-1525/infra/dependencies.lock.json</fonte>
