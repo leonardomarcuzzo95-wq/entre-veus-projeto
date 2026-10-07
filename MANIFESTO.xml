@@ -2,7 +2,7 @@
 <manifesto versao="1.2" projeto="Entre Véus" algoritmo="SHA-256">
   <escopo>Integridade dos arquivos publicos versionados; este manifesto nao calcula hash de si mesmo. Nao constitui evidencia de gameplay nem assinatura digital.</escopo>
   <arquivo caminho=".gitattributes" bytes="86" sha256="a0503fd5e5b6b2ba8367ded4dd3118d60bde2885b853cbeef4c50f3904a6b632" />
-  <arquivo caminho=".github/workflows/validar.yml" bytes="817" sha256="15fc03542d7198022f0ef1369a0bddaf92c985316b13e441f81cf08027ebc784" />
+  <arquivo caminho=".github/workflows/validar.yml" bytes="1030" sha256="29c30c8bfa7f36676809ad79c7279cdeafcb7377fad2c6a3322bb7382ea21a65" />
   <arquivo caminho=".gitignore" bytes="4512" sha256="f9cb5e707fe2164f37e88257cf47218f1e53ff38683fa3850b30932768c79c7f" />
   <arquivo caminho="AGENTS.md" bytes="1974" sha256="7684b691c0a9d025a8032a167fcde9ed1d98e7121f84299b17139bcadce5d6ba" />
   <arquivo caminho="Encerrar-servidor.cmd" bytes="130" sha256="c2c877b6a22a50584939fe1464e60fb2780866cd2081eb0ad13d905c112d1ab9" />
