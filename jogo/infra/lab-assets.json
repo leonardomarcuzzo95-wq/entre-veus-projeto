@@ -1,0 +1,32 @@
+{
+  "purpose": "Local protocol and persistence test only; not final artwork",
+  "map": {
+    "width": 31,
+    "height": 31,
+    "tiles": 961,
+    "spawn": {
+      "x": 100,
+      "y": 100,
+      "z": 7
+    },
+    "floorId": 103
+  },
+  "client": {
+    "protocol": 1511,
+    "items": 51950,
+    "outfits": 1875,
+    "effects": 303,
+    "missiles": 62,
+    "sprites": 3
+  },
+  "provenance": {
+    "pixels": "Original geometric pixel generator in generate-lab.mjs",
+    "map": "Original generated grid in generate-lab.mjs",
+    "metadata": "Compatibility fields from pinned Canary GPL appearance metadata; release audit remains pending"
+  },
+  "sha256": {
+    "map": "ce76e070b12d1bcb6a4395cd0d577be47121ee21c08bf8d2a9e91b722ff8a33c",
+    "dat": "295414461e82a3cb67bfd1b9110ff023d2fe857b2c9cb752b98d47c7e901a48c",
+    "spr": "076d8d5840d93ffa704b39d1db16740badd5bd3a92269efef32df6a57fe9398a"
+  }
+}

@@ -1,0 +1,24 @@
+name: Validar fontes e evidencias
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Obter fontes
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4 verificado em 2026-10-07
+        with:
+          persist-credentials: false
+      - name: Preparar interpretador Lua para sintaxe e testes puros
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y luajit
+      - name: Validar arquivos permitidos, sintaxe e regressao dos relatorios
+        shell: pwsh
+        run: ./versionamento/Verificar-Repositorio.ps1 -CheckIndex -RequireLua

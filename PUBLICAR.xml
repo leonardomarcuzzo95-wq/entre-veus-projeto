@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<guia idioma="pt-BR" data="2026-10-07">
-  <objetivo>Preparar a apresentação documental de Entre Véus em um repositório GitHub.</objetivo>
-  <estado>Publicação autorizada pelo idealizador em 07/10/2026. Repositório público criado para receber somente este pacote documental.</estado>
+<guia idioma="pt-BR" data="2026-10-07" versao="1.2">
+  <objetivo>Manter o código e a documentação revisados no GitHub, com histórico de alterações.</objetivo>
   <repositorio>https://github.com/leonardomarcuzzo95-wq/entre-veus-projeto</repositorio>
-  <arquivos>
-    <arquivo caminho="README.md">Apresentação curta escrita em XML dentro de bloco de código, com links reconhecidos pelo GitHub.</arquivo>
-    <arquivo caminho="projeto.xml">Fonte principal do dossiê. Use este documento para encaminhar a outras pessoas ou ferramentas.</arquivo>
-    <arquivo caminho="evidencias.xml">Resumo dos testes existentes, suas limitações e hashes dos documentos de origem.</arquivo>
-    <arquivo caminho="PUBLICAR.xml">Este guia.</arquivo>
-    <arquivo caminho="MANIFESTO.xml">Lista de arquivos e hashes SHA-256 do pacote; o manifesto não inclui hash de si mesmo.</arquivo>
-    <arquivo caminho=".gitignore">Exclusões auxiliares; não substituem a revisão do conteúdo enviado.</arquivo>
-  </arquivos>
-  <exportacao>
-    <passo ordem="1">Extraia entre-veus-projeto-2026-10-07-publicado.zip, versão 1.1. A pasta interna entre-veus-projeto é a raiz do repositório. O ZIP anterior, sem o sufixo publicado, preserva a versão 1.0 anterior à autorização.</passo>
-    <passo ordem="2">Leia projeto.xml em um editor com suporte a UTF-8. O conteúdo preserva acentos e utiliza XML 1.0.</passo>
-    <passo ordem="3">Para compartilhar apenas a ideia, envie projeto.xml. Para preservar contexto e integridade, compartilhe o ZIP inteiro.</passo>
-    <passo ordem="4">O destino desta versão é o repositório público leonardomarcuzzo95-wq/entre-veus-projeto. Para atualizações, mantenha a estrutura dos arquivos na raiz.</passo>
-    <passo ordem="5">Envie somente os seis arquivos listados neste guia, mantendo README.md na raiz. Não envie a pasta inteira do laboratório do jogo.</passo>
-    <passo ordem="6">Depois do envio, confira o README, os links e o conteúdo XML no repositório. O GitHub mostrará os documentos como código-fonte; não há site ou servidor executável neste pacote.</passo>
-  </exportacao>
-  <atualizacoes>
-    <item>Ao alterar o conteúdo, atualize a versão, a data e os hashes do manifesto; preserve a versão anterior para comparação.</item>
-    <item>Mantenha estados explícitos: implementado, testado localmente, planejado, proposto ou condicional.</item>
-    <item>Não transforme a intenção societária em afirmação de sociedade registrada sem os documentos correspondentes.</item>
-    <item>Não apresente estudos sobre token como emissão, listagem ou oferta financeira já realizadas.</item>
-  </atualizacoes>
-  <licencas>Este pacote não redistribui código do Canary ou OTClient. Uma futura publicação do software será uma entrega separada, com avisos, código e recursos licenciados conforme cada componente.</licencas>
-  <referencias>Os caminhos caminho_origem e origem_workspace identificam registros do laboratório que não foram incluídos. Os hashes permitem comparar futuras cópias, mas não são assinatura digital, certificação independente ou prova jurídica de autoria.</referencias>
+  <estrutura>
+    <diretorio caminho="jogo/atualizacao-1525">Pacote próprio, ajustes do cliente e infraestrutura atual.</diretorio>
+    <diretorio caminho="jogo/infra">Scripts de apoio do laboratório anterior ainda usados pela versão atual.</diretorio>
+    <diretorio caminho="versionamento">Lista pública, checks, fixture histórica, templates e documentação de desenvolvimento.</diretorio>
+    <diretorio caminho=".github/workflows">Verificação automática das fontes e testes puros.</diretorio>
+  </estrutura>
+  <regra>Somente os arquivos explicitamente listados em versionamento/arquivos-publicos.xml são permitidos. O manifesto registra os hashes de todos eles, exceto de si mesmo.</regra>
+  <fluxo>Editar arquivos versionados, revisar diff, atualizar manifesto, preparar o index, executar o verificador, criar commit e enviar pelo acesso GitHub autorizado. Consulte versionamento/CONEXAO-GITHUB.xml.</fluxo>
+  <exportacao>Use o download do repositório na revisão desejada para obter as fontes públicas. Os ZIPs documentais 1.0 e 1.1 em exportar-github são históricos locais e não representam a totalidade do código agora versionado.</exportacao>
+  <limites>Um clone não inclui cliente/servidor executáveis, banco nem recursos herdados. Preparar outra máquina para jogar exige uma etapa própria de instalação e validação. Salvar um arquivo local não o envia automaticamente.</limites>
+  <segredos>Configurações privadas, runtime-tools.json, credenciais, logs, dados de jogadores e backups permanecem fora do repositório.</segredos>
+  <licencas>As licenças das bases publicadas devem acompanhar os trechos derivados. Veja versionamento/LICENCAS.xml. Não se declara autorização para redistribuir o catálogo visual herdado.</licencas>
 </guia>

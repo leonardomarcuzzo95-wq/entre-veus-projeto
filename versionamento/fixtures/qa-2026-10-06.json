@@ -1,0 +1,401 @@
+{
+  "fixtureKind": "historical-regression-subset-not-a-new-game-test",
+  "sourceRunId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+  "sourceReportSha256": "c6d8276c2f022d7939c21c6923dc39402e259bc20ffd5985fc4c05cf3a411d90",
+  "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+  "verifiedAt": "2026-10-06T20:00:05.7681566+00:00",
+  "schemaVersion": 59,
+  "freshEvidence": true,
+  "localOnly": true,
+  "backupExists": true,
+  "persistedQA": {
+    "experience": 100,
+    "observedAt": "2026-10-06T20:00:05.7681566+00:00",
+    "bagCount": 1,
+    "questState": 2,
+    "character": "Explorador QA",
+    "online": 0,
+    "rewardCount": 1
+  },
+  "contentTest": {
+    "clientVersion": 1525,
+    "success": true,
+    "dialogue": [
+      "Bem-vindo ao Porto da Memoria, Explorador QA. Posso lhe contar uma {missao}.",
+      "A leste da praca existe um fragmento azul, antes do bosque. Caminhe sobre ele, volte ate mim e diga {missao}. Evite os Ecos Errantes alem do bosque.",
+      "Estarei aqui quando voltar.",
+      "Bem-vindo ao Porto da Memoria, Explorador QA. Posso lhe contar uma {missao}.",
+      "A memoria voltou! Receba esta lembranca do porto e 100 pontos de experiencia. Missao concluida.",
+      "Voce ja restaurou a primeira memoria. Sua lembranca do porto e unica. Obrigada!"
+    ],
+    "formCredentialsMatch": true,
+    "screenshot": "porto-memoria-run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b.png",
+    "events": [
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 0,
+        "sequence": 1,
+        "event": "runStarted",
+        "timestamp": "2026-10-06T19:58:28Z"
+      },
+      {
+        "luaFiles": 5,
+        "syntheticChecks": 5,
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 0,
+        "sequence": 2,
+        "event": "preflightPassed",
+        "timestamp": "2026-10-06T19:58:28Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 16149,
+        "sequence": 3,
+        "event": "loginRequested",
+        "timestamp": "2026-10-06T19:58:28Z"
+      },
+      {
+        "character": "Explorador QA",
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 16704,
+        "sequence": 4,
+        "event": "characterListReceived",
+        "timestamp": "2026-10-06T19:58:28Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 16930,
+        "player": "Explorador QA",
+        "sequence": 5,
+        "event": "onGameStart",
+        "timestamp": "2026-10-06T19:58:29Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "experience": 0,
+        "elapsedMs": 18130,
+        "sequence": 6,
+        "event": "initialExperience",
+        "timestamp": "2026-10-06T19:58:30Z"
+      },
+      {
+        "speaker": "Maia",
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "message": "Bem-vindo ao Porto da Memoria, Explorador QA. Posso lhe contar uma {missao}.",
+        "elapsedMs": 19147,
+        "sequence": 7,
+        "event": "npcDialogue",
+        "timestamp": "2026-10-06T19:58:31Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 19631,
+        "sequence": 8,
+        "event": "missionRequested",
+        "timestamp": "2026-10-06T19:58:31Z"
+      },
+      {
+        "speaker": "Maia",
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "message": "A leste da praca existe um fragmento azul, antes do bosque. Caminhe sobre ele, volte ate mim e diga {missao}. Evite os Ecos Errantes alem do bosque.",
+        "elapsedMs": 20655,
+        "sequence": 9,
+        "event": "npcDialogue",
+        "timestamp": "2026-10-06T19:58:32Z"
+      },
+      {
+        "speaker": "Maia",
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "message": "Estarei aqui quando voltar.",
+        "elapsedMs": 24343,
+        "sequence": 10,
+        "event": "npcDialogue",
+        "timestamp": "2026-10-06T19:58:36Z"
+      },
+      {
+        "elapsedMs": 28142,
+        "z": 7,
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "x": 112,
+        "y": 100,
+        "sequence": 11,
+        "event": "destinationReached",
+        "timestamp": "2026-10-06T19:58:40Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "message": "Voce recuperou a primeira memoria. Volte a Maia e diga: missao.",
+        "elapsedMs": 30804,
+        "sequence": 12,
+        "event": "fragmentMessage",
+        "timestamp": "2026-10-06T19:58:43Z"
+      },
+      {
+        "elapsedMs": 30945,
+        "z": 7,
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "x": 112,
+        "y": 96,
+        "sequence": 13,
+        "event": "destinationReached",
+        "timestamp": "2026-10-06T19:58:43Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 31345,
+        "sequence": 14,
+        "event": "fragmentReached",
+        "timestamp": "2026-10-06T19:58:43Z"
+      },
+      {
+        "elapsedMs": 34748,
+        "z": 7,
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "x": 112,
+        "y": 100,
+        "sequence": 15,
+        "event": "destinationReached",
+        "timestamp": "2026-10-06T19:58:47Z"
+      },
+      {
+        "elapsedMs": 42062,
+        "z": 7,
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "x": 100,
+        "y": 100,
+        "sequence": 16,
+        "event": "destinationReached",
+        "timestamp": "2026-10-06T19:58:54Z"
+      },
+      {
+        "speaker": "Maia",
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "message": "Bem-vindo ao Porto da Memoria, Explorador QA. Posso lhe contar uma {missao}.",
+        "elapsedMs": 43488,
+        "sequence": 17,
+        "event": "npcDialogue",
+        "timestamp": "2026-10-06T19:58:55Z"
+      },
+      {
+        "speaker": "Maia",
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "message": "A memoria voltou! Receba esta lembranca do porto e 100 pontos de experiencia. Missao concluida.",
+        "elapsedMs": 45092,
+        "sequence": 18,
+        "event": "npcDialogue",
+        "timestamp": "2026-10-06T19:58:57Z"
+      },
+      {
+        "delta": 100,
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "experience": 100,
+        "elapsedMs": 45663,
+        "sequence": 19,
+        "event": "rewardObserved",
+        "timestamp": "2026-10-06T19:58:57Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 45663,
+        "sequence": 20,
+        "event": "duplicateRewardRequested",
+        "timestamp": "2026-10-06T19:58:57Z"
+      },
+      {
+        "speaker": "Maia",
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "message": "Voce ja restaurou a primeira memoria. Sua lembranca do porto e unica. Obrigada!",
+        "elapsedMs": 46699,
+        "sequence": 21,
+        "event": "npcDialogue",
+        "timestamp": "2026-10-06T19:58:58Z"
+      },
+      {
+        "rejected": true,
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "experience": 100,
+        "elapsedMs": 47270,
+        "sequence": 22,
+        "event": "duplicateRewardChecked",
+        "timestamp": "2026-10-06T19:58:59Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "passed": true,
+        "elapsedMs": 48270,
+        "sequence": 23,
+        "event": "checkCompleted",
+        "timestamp": "2026-10-06T19:59:00Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 48270,
+        "sequence": 24,
+        "event": "logoutRequested",
+        "timestamp": "2026-10-06T19:59:00Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 48301,
+        "sequence": 25,
+        "event": "onGameEnd",
+        "timestamp": "2026-10-06T19:59:00Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 50071,
+        "sequence": 26,
+        "event": "clientExitRequested",
+        "timestamp": "2026-10-06T19:59:02Z"
+      }
+    ],
+    "duplicateRewardRejected": true,
+    "schemaVersion": 2,
+    "luaSyntax": {
+      "files": [
+        "/evidence.lua",
+        "/evidence-tests.lua",
+        "/entreveus1525rc.lua",
+        "/content-smoke.lua",
+        "/init.lua"
+      ],
+      "passed": true
+    },
+    "isHistorical": false,
+    "creaturePresent": true,
+    "recorderUnitTests": {
+      "passed": true,
+      "checks": [
+        "error_before_success",
+        "completed_result_separate_from_connection_error",
+        "errors_both_sides",
+        "failure_without_verified_success",
+        "same_second_sequence_and_run_correlation"
+      ],
+      "kind": "synthetic-unit-tests"
+    },
+    "updatedAt": "2026-10-06T19:59:02Z",
+    "rewardOnce": true,
+    "experienceAfter": 100,
+    "fragmentReached": true,
+    "result": {
+      "completedAt": "2026-10-06T19:59:00Z",
+      "scope": "NPC exploration and unique 100 XP reward, observed by the real client",
+      "status": "passed"
+    },
+    "fragmentMessage": true,
+    "test": "original-npc-exploration-reward",
+    "protocol": 1525,
+    "npcPresent": true,
+    "character": "Explorador QA",
+    "state": {
+      "connection": "offline",
+      "phase": "completed",
+      "lastEvent": "clientExitRequested",
+      "observedAt": "2026-10-06T19:59:02Z"
+    },
+    "mode": "qa",
+    "startedAt": "2026-10-06T19:58:28Z",
+    "eventSummary": {
+      "errorsAfterSuccess": 0,
+      "successSequence": 23,
+      "attemptInference": "Order alone does not prove a separate login attempt.",
+      "orderBasis": "sequence within this run; UTC timestamp plus elapsedMs",
+      "errorOrder": "no_error_observed",
+      "errorCount": 0,
+      "errorsBeforeSuccess": 0
+    },
+    "assetsLoaded": true,
+    "experienceBefore": 0,
+    "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b"
+  },
+  "launcherObservation": {
+    "position": {
+      "y": 100,
+      "z": 7,
+      "x": 100
+    },
+    "clientVersion": 1525,
+    "success": true,
+    "formCredentialsMatch": true,
+    "events": [
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 0,
+        "sequence": 1,
+        "event": "runStarted",
+        "timestamp": "2026-10-06T19:58:28Z"
+      },
+      {
+        "character": "Explorador QA",
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 16149,
+        "sequence": 2,
+        "event": "loginRequested",
+        "timestamp": "2026-10-06T19:58:28Z"
+      },
+      {
+        "matches": true,
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 16704,
+        "sequence": 3,
+        "event": "credentialsPrepared",
+        "timestamp": "2026-10-06T19:58:28Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 16930,
+        "player": "Explorador QA",
+        "sequence": 4,
+        "event": "onGameStart",
+        "timestamp": "2026-10-06T19:58:29Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "passed": true,
+        "elapsedMs": 18130,
+        "sequence": 5,
+        "event": "checkCompleted",
+        "timestamp": "2026-10-06T19:58:30Z"
+      },
+      {
+        "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b",
+        "elapsedMs": 48301,
+        "sequence": 6,
+        "event": "onGameEnd",
+        "timestamp": "2026-10-06T19:59:00Z"
+      }
+    ],
+    "schemaVersion": 2,
+    "startedAt": "2026-10-06T19:58:28Z",
+    "isHistorical": false,
+    "expectedCharacter": "Explorador QA",
+    "updatedAt": "2026-10-06T19:59:00Z",
+    "result": {
+      "completedAt": "2026-10-06T19:58:30Z",
+      "scope": "login confirmed with character and position; not continuous connection health",
+      "status": "passed"
+    },
+    "test": "launcher-login-observation",
+    "protocol": 1525,
+    "character": "Explorador QA",
+    "mode": "qa-observer",
+    "eventSummary": {
+      "errorsAfterSuccess": 0,
+      "successSequence": 5,
+      "attemptInference": "Order alone does not prove a separate login attempt.",
+      "orderBasis": "sequence within this run; UTC timestamp plus elapsedMs",
+      "errorOrder": "no_error_observed",
+      "errorCount": 0,
+      "errorsBeforeSuccess": 0
+    },
+    "screenshot": "launcher-login-run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b.png",
+    "state": {
+      "connection": "offline",
+      "phase": "login_confirmed",
+      "lastEvent": "onGameEnd",
+      "observedAt": "2026-10-06T19:59:00Z"
+    },
+    "runId": "run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b"
+  }
+}

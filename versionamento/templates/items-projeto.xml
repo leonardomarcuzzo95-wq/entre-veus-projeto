@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+  <item id="62011" name="lembranca do porto">
+    <attribute key="weight" value="100" />
+  </item>
+  <item id="62012" name="bolsa da memoria">
+    <attribute key="weight" value="500" />
+    <attribute key="containerSize" value="8" />
+    <attribute key="slotType" value="backpack" />
+  </item>
+</items>

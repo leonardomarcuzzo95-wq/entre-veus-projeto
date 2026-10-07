@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<licencas idioma="pt-BR" data="2026-10-07">
+  <componente nome="Canary" licenca="GPL-2.0" aviso="jogo/atualizacao-1525/servidor/LICENSE">
+    <escopo>Preservar a licença dos trechos derivados do servidor, inclusive a migração de esquema existente. A fonte completa da base está identificada pela revisão em dependencies.lock.json.</escopo>
+  </componente>
+  <componente nome="OTClient" licenca="MIT" aviso="jogo/atualizacao-1525/cliente/LICENSE">
+    <escopo>Preservar o aviso de autoria e a licença do cliente, inclusive no init.lua adaptado.</escopo>
+  </componente>
+  <conteudo_proprio>Maia, Eco Errante, Porto da Memória, scripts próprios e documentação são identificados como trabalho deste projeto. Nenhuma licença permissiva geral adicional é concedida aqui sobre o material original; contribuições e direitos deverão ser formalizados.</conteudo_proprio>
+  <limite>Os avisos das bases não comprovam direitos de redistribuição sobre todos os seus recursos. Por isso as bases completas, metadados e imagens herdadas não integram esta publicação.</limite>
+  <sociedade>A diretriz societária de 51%/49% não altera as licenças de software nem atribui propriedade sobre obras de terceiros.</sociedade>
+</licencas>

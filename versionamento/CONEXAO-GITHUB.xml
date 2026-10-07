@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conexao idioma="pt-BR" data="2026-10-07">
+  <repositorio>https://github.com/leonardomarcuzzo95-wq/entre-veus-projeto</repositorio>
+  <branch>main</branch>
+  <origem>Esta pasta de trabalho usa o histórico já publicado; não foi criado outro projeto GitHub nem reiniciado o histórico.</origem>
+  <fonte_de_trabalho>As alterações devem ser feitas nos próprios arquivos versionados de jogo/atualizacao-1525. O jogo instalado continua usando esses caminhos.</fonte_de_trabalho>
+  <incluido>Missão e NPCs do pacote próprio; scripts de inicialização, parada e testes; gerador de mapa e sprites; ajustes do cliente; versões das dependências; licenças pertinentes; documentação e automação de validação.</incluido>
+  <dependencia_legada>A inicialização 15.25 ainda usa Initialize-Local.ps1 e o MariaDB do laboratório anterior. Por isso os scripts de jogo/infra e suas revisões de dependências também estão versionados. Isso não unifica nem modifica os dois bancos.</dependencia_legada>
+  <excluido>Credenciais, dados de jogadores, banco, dumps SQL, backups privados, logs, caminhos pessoais de runtime-tools.json, executáveis, ZIPs, bases completas extraídas, arte e metadados herdados sem revisão de procedência.</excluido>
+  <recursos_gerados>Mapa e sprites do recorte têm gerador versionado. Os binários gerados e appearances.dat permanecem locais. As duas definições próprias acrescentadas a items.xml estão preservadas em versionamento/templates/items-projeto.xml, sem redistribuir o catálogo herdado.</recursos_gerados>
+  <clonagem>Um clone novo permite revisar código e executar as verificações independentes. Não é um instalador completo: para jogar em outra máquina ainda é preciso preparar as dependências fixadas, os recursos locais, os arquivos de configuração e o banco. A reconstrução integral em outra máquina não foi validada.</clonagem>
+  <sincronizacao>Editar ou salvar um arquivo altera a cópia local. A publicação exige commit e envio. Não há envio automático de tudo que aparece nesta pasta.</sincronizacao>
+  <autenticacao>O remote origin usa HTTPS, sem senha na URL. Os envios desta integração usam o conector GitHub autorizado. Um git push manual pelo terminal poderá exigir login próprio pelo Git Credential Manager; não há token salvo nos arquivos do projeto.</autenticacao>
+  <fluxo>
+    <passo ordem="1">Editar o arquivo real e revisar git diff.</passo>
+    <passo ordem="2">Se houver arquivo novo, revisar conteúdo e origem antes de acrescentá-lo a arquivos-publicos.xml e às permissões explícitas do .gitignore.</passo>
+    <passo ordem="3">Executar pwsh -NoProfile -File versionamento/Atualizar-Manifesto.ps1.</passo>
+    <passo ordem="4">Preparar apenas os arquivos revisados no index Git e executar pwsh -NoProfile -File versionamento/Verificar-Repositorio.ps1 -CheckIndex.</passo>
+    <passo ordem="5">Criar commit com descrição, resultado dos checks e identificação do uso de assistente, quando houver. Enviar pelo acesso GitHub autorizado.</passo>
+    <passo ordem="6">Conferir o commit remoto e o resultado em Actions. Para colaboração, usar contas individuais e pull requests; regras obrigatórias de aprovação são uma configuração separada.</passo>
+  </fluxo>
+  <validacao_automatica>Sintaxe PowerShell, JavaScript, XML, JSON e Lua; cinco casos puros do registrador Lua; oito casos negativos do validador PowerShell; lista pública e hashes. Nenhum serviço, login ou banco é iniciado.</validacao_automatica>
+  <fixture>A fixture de 06/10/2026 é uma seleção de campos do relatório real daquela data para regressão do código. O campo freshEvidence preserva a observação original e não afirma que a execução seja recente hoje. A CI não cria um teste novo de missão.</fixture>
+  <limite_de_seguranca>A lista explícita e a busca por padrões conhecidos reduzem publicações acidentais; não substituem revisão humana nem garantem detecção de todo segredo possível.</limite_de_seguranca>
+  <checkpoint_do_jogo>Prompt 1 concluído. Prompt 2, de interface e orientação, é a próxima etapa. Prompt 3, de expansão do farol, permanece posterior. A conexão Git não muda essa sequência.</checkpoint_do_jogo>
+  <fontes>
+    <fonte>https://docs.github.com/en/actions/tutorials/build-and-test-code/powershell</fonte>
+    <fonte>jogo/atualizacao-1525/infra/dependencies.lock.json</fonte>
+    <fonte>jogo/infra/dependencies.lock.json</fonte>
+  </fontes>
+</conexao>

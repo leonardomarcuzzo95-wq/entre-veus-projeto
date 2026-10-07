@@ -1,0 +1,49 @@
+[
+  {
+    "repository": "opentibiabr/canary",
+    "tag": "v3.6.1",
+    "commit": "fe0f932c380583871ce640a32628d397d3fa02ff",
+    "file": "canary-windows-cmake-release.zip",
+    "url": "https://github.com/opentibiabr/canary/releases/download/v3.6.1/canary-windows-cmake-release.zip",
+    "sha256": "7a7a7985d2042c834488a8769991109074484a79faf11f131436dbcdadfa34e8"
+  },
+  {
+    "repository": "opentibiabr/canary",
+    "tag": "v3.6.1",
+    "commit": "fe0f932c380583871ce640a32628d397d3fa02ff",
+    "file": "canary-v3.6.1-source.zip",
+    "url": "https://codeload.github.com/opentibiabr/canary/zip/fe0f932c380583871ce640a32628d397d3fa02ff",
+    "sha256": "88260db3fb269ccfae1f46c458195f25ecf96ecb7cf7840e4dfde6464799f525"
+  },
+  {
+    "repository": "opentibiabr/otclient",
+    "tag": "4.1",
+    "commit": "dd5641492a71e966b96b8a91398b44bb3df67d88",
+    "file": "otclient-windows-solution-opengl.zip",
+    "url": "https://github.com/opentibiabr/otclient/releases/download/4.1/otclient-windows-solution-opengl.zip",
+    "sha256": "7a6ae14c717e76b3ebcf51cdd29ac0a968cf7fcc9174c5275a96899bddaae69e"
+  },
+  {
+    "repository": "opentibiabr/otclient",
+    "tag": "4.1",
+    "commit": "dd5641492a71e966b96b8a91398b44bb3df67d88",
+    "file": "otclient-browser.zip",
+    "url": "https://github.com/opentibiabr/otclient/releases/download/4.1/otclient-browser.zip",
+    "sha256": "b1c4f53209794cf5da8113fe32bb960e0a701605b9dc5dc8485772ab91bba86e"
+  },
+  {
+    "repository": "opentibiabr/otclient",
+    "tag": "4.1",
+    "commit": "dd5641492a71e966b96b8a91398b44bb3df67d88",
+    "file": "otclient-4.1-source.zip",
+    "url": "https://codeload.github.com/opentibiabr/otclient/zip/dd5641492a71e966b96b8a91398b44bb3df67d88",
+    "sha256": "366b1403d958e8fbedf30c7be7efa223b8b19efdd663c782d81bcf0a82985ac9"
+  },
+  {
+    "repository": "MariaDB",
+    "tag": "11.4.13",
+    "file": "mariadb-11.4.13-winx64.zip",
+    "url": "https://archive.mariadb.org/mariadb-11.4.13/winx64-packages/mariadb-11.4.13-winx64.zip",
+    "sha256": "d62986d433eeebfde218560b276103831604a61e929e87f1a17f5aebd80257e2"
+  }
+]

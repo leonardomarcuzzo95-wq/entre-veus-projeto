@@ -1,0 +1,30 @@
+{
+  "verifiedAt": "2026-10-02",
+  "protocol": 1525,
+  "channel": "development snapshots pinned to commits, not a new stable release",
+  "server": {
+    "repository": "https://github.com/opentibiabr/canary",
+    "commit": "04b83b512114bfd888000d6e1433ed8ecaec7c5b",
+    "commitDate": "2026-09-27T18:37:13Z",
+    "source": "../../../canary-main.zip",
+    "sourceSha256": "548bf0914e4b8e8c08c001cc4c4b2a58aaee43fa67acbd9ec9f433f2d674d43c",
+    "build": "https://github.com/opentibiabr/canary/actions/runs/36341321558",
+    "artifactId": 10939285861,
+    "binaryArchive": "../../downloads/canary-04b83b5-windows.zip",
+    "binaryArchiveSha256": "59cb689d70a096963f5b626d18b9230d5427ea96204cb2ba1abefacc343130ab"
+  },
+  "client": {
+    "repository": "https://github.com/opentibiabr/otclient",
+    "commit": "396f0b396741bdd4469f27cf9376103930712cff",
+    "commitDate": "2026-10-01T17:07:22Z",
+    "sourceUrl": "https://codeload.github.com/opentibiabr/otclient/zip/396f0b396741bdd4469f27cf9376103930712cff",
+    "sourceSha256": "d3a28be89e919a84fd906f35215a242829bdf1211e06f2ec0d7572156d3401eb",
+    "build": "https://github.com/opentibiabr/otclient/actions/runs/36897053359",
+    "artifactId": 11182133905,
+    "binaryArchive": "../../downloads/otclient-396f0b3-windows.zip",
+    "binaryArchiveSha256": "554f73e6510526bd9e65fd0517132264735bd2e454dafe821005fefbfc20caf1"
+  },
+  "downloadVerification": "Nightly.link redirects downloaded public artifacts; SHA-256 matched GitHub Actions artifact metadata before extraction.",
+  "stableReleasesChecked": {"canary":"v3.6.1","otclient":"4.1"},
+  "officialTibiaVersion": {"confirmed":false,"reason":"Official news/download page returned 403; 15.25 is the current Canary protocol, not a claim of latest CipSoft version."}
+}

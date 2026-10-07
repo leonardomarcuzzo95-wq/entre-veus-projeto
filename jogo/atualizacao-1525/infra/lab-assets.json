@@ -1,0 +1,35 @@
+{
+  "purpose": "Original Porto da Memoria playable prototype",
+  "map": {
+    "width": 61,
+    "height": 41,
+    "tiles": 2501,
+    "spawn": {
+      "x": 100,
+      "y": 100,
+      "z": 7
+    },
+    "customIds": [
+      62000,
+      62012
+    ]
+  },
+  "client": {
+    "protocol": 1525,
+    "items": 62012,
+    "outfits": 1949,
+    "effects": 349,
+    "missiles": 68,
+    "sprites": 18
+  },
+  "provenance": {
+    "pixels": "Original pixel functions in generate-world.mjs",
+    "map": "Original Porto da Memoria layout in generate-world.mjs",
+    "metadata": "Custom entries plus pinned Canary metadata; inherited UI and metadata release audit remains pending"
+  },
+  "sha256": {
+    "map": "bc178cb4ca8a6b52d471670e1ec8d8f8393bed83c653ecd9b5be7dcdfd1f7c81",
+    "dat": "d71555706622406fdaa7552736378b85fa9b0c28882144e4ac0c8dc128940308",
+    "spr": "4e93a39f2b4efa230253b0d67b2882b169922d84fcfab17a89fd09809609e4db"
+  }
+}

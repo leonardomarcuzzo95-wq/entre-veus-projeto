@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dossie versao="1.1" idioma="pt-BR" data="2026-10-07">
+<dossie versao="1.2" idioma="pt-BR" data="2026-10-07">
   <identidade>
     <nome estado="provisorio">Entre Véus</nome>
     <primeiro_capitulo>Porto da Memória</primeiro_capitulo>
@@ -178,9 +178,9 @@
   <repositorio>
     <nome_sugerido>entre-veus-projeto</nome_sugerido>
     <descricao_sugerida>Visão e documentação XML de Entre Véus, RPG autoral idealizado por Leonardo Marcuzzo; protótipo local e proposta futura de moeda digital.</descricao_sugerida>
-    <conteudo>Documentação, resumo público das evidências e hashes de origem. Sem executáveis, mapas, dumps SQL, configurações privadas ou credenciais.</conteudo>
+    <conteudo>Documentação, resumo público das evidências, código próprio do laboratório, ajustes do cliente e scripts de operação e validação. Sem executáveis, bases completas, mapas binários, dumps SQL, configurações privadas ou credenciais.</conteudo>
     <escopo>O repositório apresenta a ideia e organiza decisões. Hospedar estes documentos no GitHub não coloca o servidor do jogo online nem cria uma exchange.</escopo>
-    <situacao>Repositório público criado em 07/10/2026, com publicação deste pacote autorizada pelo idealizador. O repositório contém documentação; não executa o servidor do jogo.</situacao>
+    <situacao>Repositório público criado em 07/10/2026 e conectado à pasta de trabalho para versionar os arquivos revisados. A automação verifica fontes e testes puros; não hospeda o servidor do jogo.</situacao>
     <endereco>https://github.com/leonardomarcuzzo95-wq/entre-veus-projeto</endereco>
     <licenciamento_do_pacote>Nenhuma nova licença ampla sobre o material autoral é escolhida nesta entrega. Antes da publicação, definir a licença pretendida e as condições de contribuição. As licenças dos componentes externos permanecem independentes.</licenciamento_do_pacote>
   </repositorio>
