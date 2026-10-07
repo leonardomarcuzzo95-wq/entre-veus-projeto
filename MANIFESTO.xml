@@ -71,5 +71,5 @@
   <arquivo caminho="versionamento/templates/items-projeto.xml" bytes="359" sha256="4a881bf63763ece0184ab3eca945a778f596b16214c92e84348eb87beadc88ea" />
   <arquivo caminho="versionamento/templates/server-config.lua" bytes="151" sha256="8f8c22743849feb94b01dc9345ac9fbe86a4d9a4ab1181e9f969a49078ed397f" />
   <arquivo caminho="versionamento/Verificar-Lua.lua" bytes="564" sha256="1e605d16684e91a3ae6af8c563ae12264a7f38dd7b77b858f39df2e79cf5210b" />
-  <arquivo caminho="versionamento/Verificar-Repositorio.ps1" bytes="5101" sha256="8c675410e87108eb0dcb4b6c862e960e33c2399f068ba14ab7dbbe8a55fcc4ce" />
+  <arquivo caminho="versionamento/Verificar-Repositorio.ps1" bytes="5108" sha256="3680753b09dc591428fd11d2627aa5d5535b8a73be4852fa70c975e7cc3e15f3" />
 </manifesto>

@@ -20,7 +20,7 @@ try {
         if($path -match '(^|/)\.\.?(/|$)|\\|:' -or [IO.Path]::IsPathRooted($path)){throw "Caminho invalido: $path"}
         $full=[IO.Path]::GetFullPath((Join-Path $root $path))
         if(-not(Test-Path -LiteralPath $full -PathType Leaf)){throw "Arquivo ausente: $path"}
-        if((Get-Item -LiteralPath $full).Attributes -band [IO.FileAttributes]::ReparsePoint){throw "Link nao autorizado: $path"}
+        if((Get-Item -LiteralPath $full -Force).Attributes -band [IO.FileAttributes]::ReparsePoint){throw "Link nao autorizado: $path"}
         $extension=[IO.Path]::GetExtension($path)
         if($extension -in $blockedExtensions -or $path -match '(^|/)(credentials[^/]*|admin\.ini|game-client\.ini|config\.otml|runtime-tools\.json|\.env.*)$'){
             throw "Arquivo privado/gerado nao permitido: $path"
