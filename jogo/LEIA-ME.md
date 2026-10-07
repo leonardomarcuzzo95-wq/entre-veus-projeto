@@ -10,6 +10,22 @@
 4. Caminhe sobre o fragmento, volte até Maia e diga **`oi`**, depois **`missao`** na conversa. A recompensa é uma lembrança do porto e **100 pontos de experiência**, concedidos uma vez por personagem.
 5. Para encerrar, faça logout e abra **`Encerrar-servidor.cmd`**. Os serviços salvam antes de fechar. Se alguém estiver conectado, o encerramento pede que saia primeiro.
 
+### Orientação do primeiro recorte — 07/10/2026
+
+O painel no alto do mapa acompanha a conversa com Maia: explica onde digitar `oi` e `missao`, indica o caminho até o fragmento, orienta o retorno e mostra a conclusão. Partindo do centro da praça, são 12 passos para a direita e 4 para cima; para voltar, 4 para baixo e 12 para a esquerda. Não é preciso lutar com o Eco Errante.
+
+Maia agora pede explicitamente `missao` na conversa, esclarece o próximo passo e informa que os 100 XP são entregues uma única vez. O painel observa as mensagens que já existem: não modifica login, protocolo, armazenamento da missão ou recompensa. Ao reconectar, orienta falar com Maia novamente para consultar o progresso real; não deduz a missão pela experiência do personagem.
+
+Foram ocultados três atalhos: **Loja**, sem catálogo próprio; **Prey**, desativado no servidor; e **Task Hunt**, também desativado e sem ligação com a missão de Maia. Os motivos estão comentados em `atualizacao-1525/cliente/orientacao.lua`. Os demais elementos herdados ainda serão revisados. Os novos textos usam o mesmo conjunto básico de caracteres da interface local, evitando incompatibilidade com a fonte herdada.
+
+Os rótulos da orientação respeitam a largura disponível e quebram linhas; a altura do painel acompanha o texto. O teste lê os widgets reais em cada etapa para conferir objetivo, dimensões do texto e visibilidade dos três atalhos.
+
+`Test-Content.ps1 -PreviewOnly` prepara somente o Explorador QA, com backup privado, registra sua tela inicial em 100,100,7 e sai sem iniciar a missão. Produz `ui-preview-<runId>.json`; não altera o ponteiro da última rodada de missão e não deve ser apresentado como teste de missão aprovado. A captura aguarda a renderização e a gravação antes do logout. A rodada completa continua sendo `Test-Content.ps1`, seguida de `Verify-Upgrade.ps1 -AfterRestart:$false -RunId <runId>`.
+
+Capturas e registros desta etapa permanecem localmente em `avaliacao/interface-2026-10-07/`; o relatório da missão segue o formato de eventos descrito abaixo. A execução automatizada confere o fluxo e os textos, mas a compreensão por uma pessoa iniciante ainda precisa ser observada sem ajuda externa.
+
+**Rodada real de 07/10/2026:** `run-20261007T214300Z-dc5d90c301db4ad6a326392145edd68c`, concluída às 21:43:58 UTC. O QA passou de 0 para 100 XP; repetir a solicitação não deu outra recompensa. Às 21:44:02 UTC, a leitura do banco confirmou estado 2, 100 XP, uma bolsa, uma lembrança e QA desconectado. Seis observações da interface confirmaram as cinco fases, rótulos sem corte e três atalhos ocultos. Capturas reais inspecionadas em aproximadamente 1028 × 658 pixels; outras resoluções ainda não foram verificadas. Nenhum erro de conexão foi registrado. Esta etapa teve uma única rodada completa; as três prévias de tela não executaram a missão (a primeira imagem saiu antes da atualização visual e foi preservada como captura inadequada). Não houve teste de persistência após reinício nesta rodada.
+
 Se precisar consultar a senha, abra **`Ver-acesso.cmd`**. A conta e a senha continuam as mesmas. Use os atalhos da pasta principal para que os serviços e o preenchimento automático sejam preparados.
 
 ## O que mudou

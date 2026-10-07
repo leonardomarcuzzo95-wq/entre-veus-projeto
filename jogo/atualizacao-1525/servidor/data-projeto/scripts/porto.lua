@@ -13,7 +13,7 @@ function fragment.onStepIn(creature,item,position,fromPosition)
     if not player then return true end
     if player:getStorageValue(110020)==0 then
         player:setStorageValue(110020,1)
-        player:sendTextMessage(MESSAGE_EVENT_ADVANCE,"Voce recuperou a primeira memoria. Volte a Maia e diga: missao.")
+        player:sendTextMessage(MESSAGE_EVENT_ADVANCE,"Voce recuperou a primeira memoria. Volte 4 passos para baixo e 12 para a esquerda. Perto de Maia, diga oi; na conversa dela, diga missao.")
         position:sendMagicEffect(CONST_ME_MAGIC_BLUE)
     elseif player:getStorageValue(110020)<0 then
         player:sendTextMessage(MESSAGE_EVENT_ADVANCE,"O fragmento parece guardar uma historia. Fale com Maia na praca: oi, depois missao.")

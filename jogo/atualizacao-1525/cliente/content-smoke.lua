@@ -1,11 +1,13 @@
 -- One real mission run with Explorador QA. No Viajante login or movement.
 local E=assert(EntreVeusEvidence)
-local record=E.fileRecorder("content-smoke",{
-    runId=EntreVeusRunId,test="original-npc-exploration-reward",mode="qa",
-    scope="NPC exploration and unique 100 XP reward, observed by the real client"
+local previewOnly=os.getenv('ENTREVEUS_UI_PREVIEW')=='1'
+local record=E.fileRecorder(previewOnly and "ui-preview" or "content-smoke",{
+    runId=EntreVeusRunId,test=previewOnly and "initial-ui-preview" or "original-npc-exploration-reward",mode=previewOnly and "preview" or "qa",
+    scope=previewOnly and "Initial QA screen only; no mission executed" or "NPC exploration and unique 100 XP reward, observed by the real client"
 })
 local result=record.data
 result.dialogue={}
+result.ui={snapshots={},checksPassed=false}
 local runtime=os.getenv('LOCALAPPDATA'):gsub('\\','/') .. '/EntreVeus1525'
 local f=assert(io.open(runtime .. '/credentials.json','r'))
 local secrets=json.decode(f:read('*a'));f:close()
@@ -21,9 +23,25 @@ local function finish(message)
     end
     scheduleEvent(function() record:event("clientExitRequested");g_app.exit() end,1800)
 end
+local function observeUi(phase,stage)
+    local snapshot=EntreVeusGuide and EntreVeusGuide.snapshot()
+    if not snapshot or not snapshot.visible or snapshot.phase~=phase then
+        finish('Guidance phase not confirmed: '..phase);return false
+    end
+    for _,label in ipairs(snapshot.labels) do
+        if not label.fits then finish('Guidance text clipped: '..label.id);return false end
+    end
+    for _,control in ipairs(snapshot.hiddenControls) do
+        if not control.present or not control.hidden then finish('Unused control still visible: '..control.id);return false end
+    end
+    snapshot.stage=stage
+    result.ui.snapshots[#result.ui.snapshots+1]=snapshot
+    record:event('uiObserved',{stage=stage,phase=phase,snapshot=snapshot})
+    return true
+end
 -- Compile without executing the source; exercise recorder logic with synthetic events
 -- separately from the actual game events of this run.
-local syntaxFiles={'/evidence.lua','/evidence-tests.lua','/entreveus1525rc.lua','/content-smoke.lua','/init.lua'}
+local syntaxFiles={'/evidence.lua','/evidence-tests.lua','/entreveus1525rc.lua','/content-smoke.lua','/init.lua','/orientacao.lua'}
 local checked={}
 for _,path in ipairs(syntaxFiles) do
     local compiled,err=loadstring(g_resources.readFileContents(path),path)
@@ -63,18 +81,23 @@ local function verifyReward()
     result.rewardOnce=result.experienceAfter-result.experienceBefore==100
     record:event("rewardObserved",{experience=result.experienceAfter,delta=result.experienceAfter-result.experienceBefore})
     if not result.rewardOnce then return finish('Expected exactly 100 experience reward') end
+    if not observeUi('completed','reward') then return end
     g_game.talkPrivate(MessageModes.NpcTo,'Maia','missao')
     record:event("duplicateRewardRequested")
     scheduleEvent(function()
         if done then return end
         result.duplicateRewardRejected=g_game.getLocalPlayer():getExperience()==result.experienceAfter
         record:event("duplicateRewardChecked",{rejected=result.duplicateRewardRejected,experience=g_game.getLocalPlayer():getExperience()})
-        result.screenshot='porto-memoria-'..EntreVeusRunId..'.png'
-        record:save()
-        g_app.doScreenshot(result.screenshot)
         scheduleEvent(function()
-            if result.duplicateRewardRejected then finish() else finish('Duplicate experience reward') end
-        end,1000)
+            if done or not observeUi('completed','duplicate_reward') then return end
+            result.ui.checksPassed=true
+            result.screenshot='porto-memoria-'..EntreVeusRunId..'.png'
+            record:save()
+            g_app.doScreenshot(result.screenshot)
+            scheduleEvent(function()
+                if result.duplicateRewardRejected then finish() else finish('Duplicate experience reward') end
+            end,5000)
+        end,6000)
     end,1600)
 end
 local function completeQuest()
@@ -97,9 +120,28 @@ local function reachFragment()
         walk(dirs(North,4),112,96,function()
             result.fragmentReached=true
             record:event("fragmentReached")
-            scheduleEvent(returnToMaia,1000)
+            scheduleEvent(function()
+                if observeUi('returning','fragment') then
+                    result.ui.fragmentScreenshot='ui-fragmento-'..EntreVeusRunId..'.png'
+                    g_app.doScreenshot(result.ui.fragmentScreenshot)
+                    scheduleEvent(returnToMaia,1500)
+                end
+            end,1000)
         end)
     end)
+end
+local function beginMission()
+    if done then return end
+    g_game.talk('oi')
+    scheduleEvent(function()
+        if done or not observeUi('dialogue','greeting') then return end
+        g_game.talkPrivate(MessageModes.NpcTo,'Maia','missao')
+        record:event('missionRequested')
+        scheduleEvent(function()
+            if done or not observeUi('seeking','accepted') then return end
+            reachFragment()
+        end,1600)
+    end,1500)
 end
 connect(g_game,{
     onLoginError=function(message) record:error("onLoginError",message);finish("Login error; see timed events") end,
@@ -134,18 +176,37 @@ connect(g_game,{
             result.experienceBefore=player:getExperience()
             record:event("initialExperience",{experience=result.experienceBefore})
             if result.experienceBefore~=0 then return finish("QA must start with zero experience") end
+            if previewOnly then
+                local p=position()
+                if not p or p.x~=100 or p.y~=100 or p.z~=7 then return finish('QA preview must start at 100,100,7') end
+                result.position={x=p.x,y=p.y,z=p.z}
+                result.screenshot='ui-before-'..EntreVeusRunId..'.png'
+                -- Screenshot reads the renderer asynchronously; keep the game visible
+                -- long enough to draw and finish writing before logging out.
+                scheduleEvent(function()
+                    if done then return end
+                    result.previewUi={gameVisible=modules.game_interface.getRootPanel():isVisible(),
+                        mapVisible=modules.game_interface.getMapPanel():isVisible(),
+                        windowVisible=g_window.isVisible(),windowFocused=g_window.hasFocus(),fps=g_app.getGraphicsFps()}
+                    if not result.previewUi.gameVisible or not result.previewUi.mapVisible then return finish('Game UI was not visible for preview') end
+                    if not observeUi('initial','preview') then return end
+                    result.ui.checksPassed=true
+                    record:event('initialUiCaptureRequested',{player=result.character,position=result.position,ui=result.previewUi})
+                    g_app.doScreenshot(result.screenshot)
+                    scheduleEvent(function() finish() end,5000)
+                end,5000)
+                return
+            end
             for _,creature in pairs(g_map.getSpectators(position(),false)) do
                 if creature:getName()=='Maia' then result.npcPresent=true end
             end
             if not result.npcPresent then return finish('Maia was not spawned near the plaza') end
-            g_game.talk('oi')
-            scheduleEvent(function()
-                if done then return end
-                g_game.talkPrivate(MessageModes.NpcTo,'Maia','missao')
-                record:event("missionRequested")
-                scheduleEvent(reachFragment,1600)
-            end,1500)
-        end,1200)
+            if not observeUi('initial','start') then return end
+            result.ui.initialScreenshot='ui-inicial-'..EntreVeusRunId..'.png'
+            record:save()
+            g_app.doScreenshot(result.ui.initialScreenshot)
+            scheduleEvent(beginMission,3000)
+        end,5000)
     end
 })
 local http

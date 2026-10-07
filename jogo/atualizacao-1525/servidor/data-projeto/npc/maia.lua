@@ -13,7 +13,7 @@ npcType.onSay=function(npc,creature,kind,message)
     handler:onSay(npc,creature,kind,message)
 end
 npcType.onCloseChannel=function(npc,player) handler:onCloseChannel(npc,player) end
-handler:setMessage(MESSAGE_GREET,"Bem-vindo ao Porto da Memoria, |PLAYERNAME|. Posso lhe contar uma {missao}.")
+handler:setMessage(MESSAGE_GREET,"Bem-vindo ao Porto da Memoria, |PLAYERNAME|. Digite {missao} nesta conversa e aperte Enter para saber seu proximo passo.")
 handler:setMessage(MESSAGE_FAREWELL,"Que suas lembrancas iluminem o caminho.")
 handler:setMessage(MESSAGE_WALKAWAY,"Estarei aqui quando voltar.")
 handler:setCallback(CALLBACK_MESSAGE_DEFAULT,function(npc,player,kind,message)
@@ -22,12 +22,12 @@ handler:setCallback(CALLBACK_MESSAGE_DEFAULT,function(npc,player,kind,message)
     if text:find("missao",1,true) or text:find("memoria",1,true) then
         local state=player:getStorageValue(110020)
         if state==2 then
-            handler:say("Voce ja restaurou a primeira memoria. Sua lembranca do porto e unica. Obrigada!",npc,player)
+            handler:say("Voce ja restaurou a primeira memoria. Missao concluida: a lembranca e os 100 XP foram entregues uma unica vez. Pode explorar o porto. Obrigada!",npc,player)
         elseif state==1 then
             if player:addItem(62011,1,false) then
                 player:setStorageValue(110020,2)
                 player:addExperience(100,true)
-                handler:say("A memoria voltou! Receba esta lembranca do porto e 100 pontos de experiencia. Missao concluida.",npc,player)
+                handler:say("A memoria voltou! Missao concluida. Voce recebeu a lembranca do porto e 100 pontos de experiencia, uma unica vez. Pode continuar explorando.",npc,player)
             else
                 handler:say("Libere espaco para receber sua lembranca e fale {missao} novamente.",npc,player)
             end
@@ -37,7 +37,7 @@ handler:setCallback(CALLBACK_MESSAGE_DEFAULT,function(npc,player,kind,message)
                 return true
             end
             player:setStorageValue(110020,0)
-            handler:say("A leste da praca existe um fragmento azul, antes do bosque. Caminhe sobre ele, volte ate mim e diga {missao}. Evite os Ecos Errantes alem do bosque.",npc,player)
+            handler:say("Procure o fragmento azul: da praca, ande 12 passos para leste (direita) e 4 para norte (cima). Pise nele. Depois volte, diga {oi} e, nesta conversa, {missao}. Nao e preciso lutar com o Eco Errante.",npc,player)
         end
     end
     return true
