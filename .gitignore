@@ -1,0 +1,25 @@
+# Este repositorio deve conter apenas a apresentacao documental.
+.env
+.env.*
+!.env.example
+*.sql
+*.sql.gz
+*.dump
+*.key
+*.pem
+*.pfx
+*.p12
+*.log
+*.exe
+*.dll
+*.zip
+*.7z
+*.otbm
+private/
+privado/
+backups/
+runtime/
+logs/
+node_modules/
+.DS_Store
+Thumbs.db

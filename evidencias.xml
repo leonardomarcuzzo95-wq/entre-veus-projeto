@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<evidencias preparado_em="2026-10-07" idioma="pt-BR" natureza="resumo_de_registros_existentes">
+  <escopo>Este arquivo resume uma rodada local realizada em 06/10/2026. A preparação do dossiê em 07/10/2026 não executou novamente o jogo, não consultou o banco ativo e não publicou serviços.</escopo>
+  <rodada_local protocolo="1525" esquema="59" verificada_em="2026-10-06T20:00:05.7681566+00:00" runId="run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b" resultado="passed">
+    <personagem>Explorador QA</personagem>
+    <persistencia_observada lembrancas="1" estado_missao="2" bolsas="1" xp="100" conectado="false" />
+    <alcance>Login do Explorador QA, exploração, conclusão, repetição sem novo XP, logout e leitura posterior da persistência. Eventos de conexão e missão identificados por horário UTC e runId.</alcance>
+    <limites>Não comprova capacidade multiplayer, acesso público, desempenho sob carga, reinício nesta rodada, segurança financeira ou funcionamento de moeda. Não é teste do formulário interativo do Viajante.</limites>
+  </rodada_local>
+  <validador casos="8" baseline_aceita="true" verificacao_em="2026-10-06T20:00:06.2624263Z" natureza="casos_sinteticos_sem_nova_rodada_de_jogo">
+    <caso rejeitada="true" entrada="persisted XP 0" />
+    <caso rejeitada="true" entrada="persisted XP 99" />
+    <caso rejeitada="true" entrada="persisted XP 101" />
+    <caso rejeitada="true" entrada="persisted XP missing" />
+    <caso rejeitada="true" entrada="stale" />
+    <caso rejeitada="true" entrada="wrong-run" />
+    <caso rejeitada="true" entrada="missing-timestamp" />
+    <caso rejeitada="true" entrada="wrong-order-summary" />
+  </validador>
+  <historico>Relatos anteriores registram persistência após reinício. A rodada de 06/10 não repetiu esse cenário. O relatório antigo com sucesso e erro sem eventos datados não permite concluir a ordem temporal daquele erro.</historico>
+  <origens>
+    <registro sha256="750d96ef00e7f1471289a7cba00c35b51ea8c50b1c0976f4e78a096d9ad3c273" origem_workspace="avaliacao/PLANO_DO_JOGO.md" original_incluido="false" />
+    <registro sha256="ae5435d967c71b6cbd024751bfb07fe3dda0aa121538ae1b15319051dfba47ca" origem_workspace="avaliacao/confiabilidade-2026-10-06/ENTREGA.md" original_incluido="false" />
+    <registro sha256="428847b48e644119ea9777bb09b05df8f5fb51395e96932ffd774553a76b3ba6" origem_workspace="jogo/atualizacao-1525/infra/dependencies.lock.json" original_incluido="false" />
+    <registro sha256="8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643" origem_workspace="jogo/atualizacao-1525/servidor/LICENSE" original_incluido="false" />
+    <registro sha256="9dfe774a4fa5347bf63abece99c242f0b6166a206c83bcf27d4ecc0dae73a0ab" origem_workspace="jogo/atualizacao-1525/cliente/LICENSE" original_incluido="false" />
+    <registro sha256="c6d8276c2f022d7939c21c6923dc39402e259bc20ffd5985fc4c05cf3a411d90" origem_workspace="avaliacao/atualizacao-1525/execucoes/run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b/verification-20261006T200005768Z-2680484c.json" original_incluido="false" />
+    <registro sha256="501d5780bef98a6ec373bc66a2c18922d61e6e0efae3be71cd4bd471ac0d2ef4" origem_workspace="avaliacao/atualizacao-1525/execucoes/run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b/validacao-negativa.json" original_incluido="false" />
+  </origens>
+  <integridade>Os hashes identificam as versões dos arquivos de origem usadas no resumo. Os originais não integram o pacote público. O hash sozinho não é auditoria independente, assinatura digital ou prova jurídica de autoria.</integridade>
+</evidencias>

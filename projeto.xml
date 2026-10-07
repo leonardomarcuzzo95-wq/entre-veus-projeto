@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dossie versao="1.1" idioma="pt-BR" data="2026-10-07">
+  <identidade>
+    <nome estado="provisorio">Entre Véus</nome>
+    <primeiro_capitulo>Porto da Memória</primeiro_capitulo>
+    <idealizador>Leonardo Marcuzzo</idealizador>
+    <titulo>Um mundo que guarda memórias; uma jornada para recuperá-las.</titulo>
+    <categoria>Projeto de RPG 2D com ambição de mundo online persistente.</categoria>
+    <estado_atual>Protótipo local jogável, com conteúdo inicial próprio e uma missão testada.</estado_atual>
+    <finalidade>Apresentar a visão do jogo, o estágio comprovado do desenvolvimento, a estrutura societária desejada e a possibilidade futura de uma moeda negociável em exchange.</finalidade>
+    <relacao_com_tibia>O projeto se inspira na exploração e na persistência de RPGs como Tibia e utiliza bases abertas do ecossistema OpenTibia. Não é o Tibia Global original, uma expansão oficial ou um produto afiliado à CipSoft.</relacao_com_tibia>
+    <natureza>Documento de visão e planejamento para discussão técnica e empresarial. Não constitui oferta pública de investimento, venda de participação, emissão de token ou compromisso de lançamento.</natureza>
+  </identidade>
+
+  <resumo_executivo>
+    <paragrafo>Entre Véus propõe um RPG em que explorar significa descobrir histórias. Em um arquipélago de fantasia, memórias podem assumir a forma de criaturas, caminhos e ruínas. O jogador é um viajante capaz de recuperar essas lembranças e compreender os lugares que visita.</paragrafo>
+    <paragrafo>A construção começou por um recorte pequeno: Porto da Memória. Já existem cliente e servidor locais compatíveis, mapa próprio, Maia, o Eco Errante e uma missão curta com recompensa única. O objetivo seguinte é tornar essa experiência clara para novos jogadores e validá-la em cooperação antes de ampliar o mundo.</paragrafo>
+    <paragrafo>Leonardo Marcuzzo é apresentado como idealizador e fundador proponente. Sua diretriz permanente é manter 51% da participação societária do empreendimento; os demais acionistas, em conjunto, corresponderão aos outros 49%, sujeitos à formalização.</paragrafo>
+    <paragrafo>Uma frente futura estudará uma moeda digital própria, com usos definidos no ecossistema do jogo e eventual negociação em exchange. Essa frente está no campo da proposta: não há implantação financeira, preço, emissão ou listagem comprovados.</paragrafo>
+  </resumo_executivo>
+
+  <visao_do_jogo estado="proposta_criativa_ajustavel">
+    <mundo>Um arquipélago onde os lugares guardam memórias que podem tornar-se criaturas, caminhos e ruínas.</mundo>
+    <papel_do_jogador>Um viajante que explora, conversa, investiga e recupera fragmentos de memória.</papel_do_jogador>
+    <experiencia>Descoberta, progressão e cooperação em um mundo persistente, com combate a desenvolver e equilibrar.</experiencia>
+    <diferencial_proposto>Usar a recuperação de memórias para conduzir missões e revelar novos caminhos, ligando a progressão à história do mundo.</diferencial_proposto>
+    <publico estado="hipotese">Adultos interessados em RPGs 2D, exploração e cooperação, inclusive jogadores familiarizados com Tibia. Interesse e demanda ainda precisam ser observados.</publico>
+    <tom>Fantasia com dimensão espiritual ficcional, sem vínculo estabelecido com uma religião real.</tom>
+    <persistencia>O progresso individual já tem evidências locais. Transformações permanentes compartilhadas por todo o mundo são uma possibilidade posterior, não uma funcionalidade entregue.</persistencia>
+    <direcao_visual>Arte própria em construção; sprites de protótipo e partes herdadas da interface ainda precisam de revisão.</direcao_visual>
+  </visao_do_jogo>
+
+  <historia>
+    <capitulo titulo="Porto da Memória" estado="implementado">
+      <passo ordem="1">O Viajante chega ao Porto da Memória, uma comunidade costeira com praça, casas, vegetação e um farol.</passo>
+      <passo ordem="2">Perto da praça, encontra Maia, a guardiã das memórias. Ao conversar com ela, recebe a tarefa de procurar um fragmento azul a leste, antes do bosque.</passo>
+      <passo ordem="3">Ao caminhar sobre o fragmento, recupera a primeira memória e recebe a orientação de retornar a Maia.</passo>
+      <passo ordem="4">Na região também existe o Eco Errante, que murmura: “Ainda me lembro...”. A criatura atual é não hostil, embora possa ser atacada.</passo>
+      <passo ordem="5">De volta a Maia, o viajante recebe uma lembrança do porto e 100 pontos de experiência, uma única vez. Uma bolsa pode ser entregue na aceitação, se o espaço de mochila estiver vazio.</passo>
+      <limite>O conteúdo da memória, seu antigo portador, a origem do Viajante e a causa da fragmentação ainda não foram definidos.</limite>
+    </capitulo>
+    <continuacao titulo="O Farol Esquecido" estado="planejada">
+      <proposta>Expandir a exploração, recuperar outros fragmentos e liberar uma passagem associada ao progresso da missão.</proposta>
+      <escopo_original>Uma vila, duas áreas de exploração, três NPCs, quatro criaturas e uma missão de três etapas.</escopo_original>
+      <situacao>Esse escopo completo não está implementado. A expansão deve começar por uma etapa pequena, preservando a missão existente.</situacao>
+    </continuacao>
+  </historia>
+
+  <produto>
+    <ciclo_principal>Entrar no mundo, conversar, receber um objetivo, explorar, encontrar um fragmento, retornar, receber a recompensa e preservar o progresso.</ciclo_principal>
+    <principios estado="propostos">
+      <item>Objetivos compreensíveis pela própria interface e pelos diálogos.</item>
+      <item>Conteúdo original ou com origem e licença documentadas.</item>
+      <item>Progressão previsível, sem duplicação de recompensas.</item>
+      <item>Cooperação validada em sessões reais antes de ampliar o escopo.</item>
+      <item>Uma experiência que faça sentido como jogo, mesmo sem moeda negociável.</item>
+    </principios>
+    <fora_do_recorte_atual>Economia ampla, classes adicionais, PvP, grandes áreas, eventos globais, loja e infraestrutura pública.</fora_do_recorte_atual>
+  </produto>
+
+  <estado_tecnico fontes="local-plano local-lock local-evidencias">
+    <base componente="servidor" nome="Canary" revisao="04b83b512114bfd888000d6e1433ed8ecaec7c5b" licenca_principal="GPL-2.0" />
+    <base componente="cliente" nome="OTClient" revisao="396f0b396741bdd4469f27cf9376103930712cff" licenca_principal="MIT" />
+    <protocolo>1525</protocolo>
+    <banco_de_dados versao="11.4.13" esquema="59">MariaDB</banco_de_dados>
+    <conteudo mapa_largura="61" mapa_altura="41" sprites_proprios="18" npcs="1" criaturas="1" />
+    <extensoes>Conteúdo e missões em Lua/XML; cliente próprio adaptado sobre OTClient; ferramentas locais em PowerShell e gerador de mundo em JavaScript.</extensoes>
+    <versoes>Revisões de desenvolvimento fixadas e registradas localmente. Não se afirma que sejam a versão mais recente do Tibia oficial.</versoes>
+    <teste data="2026-10-06" personagem="Explorador QA" runId="run-20261006T195755Z-824c80f2d1524b91a2e7c9e13116084b">
+      <resultado>Uma rodada real local confirmou login, missão, repetição sem novo XP e logout. O banco registrou estado final 2, exatamente 100 XP, uma bolsa e uma lembrança.</resultado>
+      <rastreabilidade>Eventos com horário UTC, identificador de execução e sequência; resultado da checagem separado do estado da conexão.</rastreabilidade>
+      <limite>Este dossiê relê e resume registros existentes. Nenhuma nova rodada de jogo foi executada em 07/10/2026. A rodada de 06/10 não incluiu reinício nem o formulário interativo do Viajante.</limite>
+    </teste>
+    <pendencias>Teste com dois jogadores, acesso entre redes distintas, carga, restauração operacional de backup, revisão completa de recursos herdados e acabamento da interface.</pendencias>
+    <publicacao>Não há evidência de servidor público ou de operação comercial validada. Este pacote não instala nem executa o jogo.</publicacao>
+  </estado_tecnico>
+
+  <autoria_e_participacao estado="diretriz_do_idealizador_a_formalizar">
+    <declaracao_do_idealizador>Leonardo Marcuzzo é o idealizador e detentor da concepção deste projeto. A diretriz é e sempre será preservar 51% de participação societária para Leonardo Marcuzzo e 49%, em conjunto, para os demais acionistas.</declaracao_do_idealizador>
+    <quadro_societario natureza="estrutura_alvo" unidade="percentual" total="100">
+      <participante id="fundador" nome="Leonardo Marcuzzo" percentual="51" papel="idealizador e fundador proponente" />
+      <participante id="demais" nome="Demais acionistas, em conjunto" percentual="49" papel="participações a definir e formalizar" />
+    </quadro_societario>
+    <permanencia>Novas entradas, transferências e futuras rodadas deverão ser planejadas para preservar a divisão exata de 51%/49%. Esta é uma diretriz permanente declarada por Leonardo, não uma garantia jurídica criada pela publicação deste arquivo.</permanencia>
+    <titularidade>“Detentor da concepção” identifica a origem declarada da iniciativa. Não atribui a Leonardo propriedade sobre Tibia, Canary, OTClient ou obras de terceiros; nem estabelece exclusividade sobre uma ideia abstrata.</titularidade>
+    <formalizacao>A documentação consultada não comprova sociedade constituída, quadro societário registrado ou contratos assinados. Os instrumentos societários deverão definir capital, direitos econômicos, votos, administração, entrada e saída de participantes e mecanismos compatíveis com a preservação dos percentuais.</formalizacao>
+    <controle>A intenção é preservar a posição majoritária do idealizador. A distribuição de votos, os quóruns e os demais direitos dependerão dos instrumentos jurídicos; o percentual isolado não descreve toda a governança.</controle>
+    <demais_participantes>Os 49% são coletivos. Não se indica que já tenham sido distribuídos, não se nomeiam acionistas inexistentes e não se atribui participação automática por contribuição técnica, compra de moeda ou participação na comunidade.</demais_participantes>
+    <terminologia>“Acionistas” reproduz a intenção do idealizador. A forma societária ainda deverá ser definida; a nomenclatura jurídica dos participantes acompanhará essa escolha.</terminologia>
+    <limite_autoral fonte="lei-direitos-autorais">Ideias abstratas não recebem, por si, proteção autoral. O dossiê registra a concepção e sua expressão, mas não substitui a análise dos direitos sobre textos, código, arte, marca e contribuições.</limite_autoral>
+  </autoria_e_participacao>
+
+  <moeda_digital estado="proposta_nao_implementada">
+    <objetivo>Estudar uma moeda própria vinculada a usos concretos no ecossistema de Entre Véus, com a possibilidade futura de negociação em uma exchange.</objetivo>
+    <significado_de_exchange>Plataforma em que um ativo pode ser negociado por seus participantes. Neste documento, a expressão indica uma ambição futura; não há exchange parceira, aprovação de listagem ou mercado ativo apresentados.</significado_de_exchange>
+    <distincoes>
+      <conceito nome="Participação societária">Os 51%/49% se referem à futura sociedade do projeto. Direitos societários devem ser formalizados pelos instrumentos próprios.</conceito>
+      <conceito nome="Saldo interno de jogo">Unidades controladas pelo servidor para uma economia interna, caso ela venha a ser implementada. Não pressupõem saque, conversão ou blockchain.</conceito>
+      <conceito nome="Token negociável">Ativo digital cuja emissão, transferência e eventual mercado externo exigem especificação própria. Não representa automaticamente ações, dividendos ou direitos sobre o jogo.</conceito>
+    </distincoes>
+    <usos_em_estudo natureza="exemplos_nao_aprovados">
+      <uso>Acesso a itens cosméticos e personalização, se compatível com a experiência pretendida.</uso>
+      <uso>Transações de serviços ou bens digitais permitidos por regras futuras do jogo.</uso>
+      <uso>Integração opcional entre um saldo elegível e um token externo, apenas se tecnicamente e juridicamente viável.</uso>
+    </usos_em_estudo>
+    <nao_definido>Nome, símbolo, rede, contrato, oferta total, emissão, distribuição, reservas, vesting, queima, taxas, custódia, preço, pares de negociação, liquidez e calendário de lançamento.</nao_definido>
+    <alocacao>Não aplicar automaticamente a proporção societária de 51%/49% à distribuição de tokens. Uma eventual tokenomia será um documento separado, ainda não definido.</alocacao>
+    <recompensas>A recompensa atual de 100 XP é progressão de personagem. Não é uma moeda, não tem conversão financeira estabelecida e não confere direito a tokens futuros.</recompensas>
+    <listagem>Qualquer listagem dependerá da escolha de uma plataforma, dos critérios então aplicáveis e da aceitação correspondente. Criar um token não comprova listagem, liquidez ou possibilidade de venda.</listagem>
+    <limites>Não há promessa de valorização, renda, retorno, paridade, recompra, liquidez ou saque garantido. A ideia não é apresentada como uma maneira comprovada de ganhar dinheiro jogando.</limites>
+    <decisao_de_projeto>O jogo deve poder continuar seu desenvolvimento mesmo se a moeda ou sua listagem não se mostrarem viáveis.</decisao_de_projeto>
+  </moeda_digital>
+
+  <arquitetura_futura_da_moeda estado="hipotese_tecnica">
+    <camada nome="Jogo">Servidor autoritativo para inventário, missões e progressão; clientes não autorizam a criação de saldo por conta própria.</camada>
+    <camada nome="Economia interna">Registro auditável de operações, identificadores únicos, prevenção de duplicidade e conciliação. Inicialmente, simulação sem valor monetário.</camada>
+    <camada nome="Integração externa opcional">Se aprovada, uma conexão separada entre a economia elegível e a rede escolhida, com regras explícitas de confirmação, falha, indisponibilidade e reconciliação.</camada>
+    <camada nome="Operação">Custódia, responsabilidades administrativas, revisão de segurança e plano de resposta a incidentes definidos antes de qualquer uso real.</camada>
+    <limite>É uma proposta de organização; essas camadas financeiras não foram implementadas nem auditadas. Nenhuma chave de carteira, endereço de depósito ou contrato de token é fornecido.</limite>
+  </arquitetura_futura_da_moeda>
+
+  <viabilidade_e_direitos>
+    <software fontes="local-licencas">As cópias inspecionadas indicam licença principal GPL-2.0 para Canary e MIT para OTClient. A futura distribuição precisa respeitar as licenças e os avisos de cada componente; a participação societária não modifica essas condições.</software>
+    <recursos>Mapas, sprites, sons, fontes, interface, textos e metadados exigem inventário de origem e direitos. Parte da interface herdada permanece pendente de revisão; não se declara que todo o cliente esteja pronto para redistribuição pública.</recursos>
+    <marca>Entre Véus é nome de trabalho, sem pesquisa de disponibilidade de marca demonstrada neste dossiê.</marca>
+    <criptoativos fontes="cvm-parecer40 cvm-faq">O enquadramento depende das características, direitos e substância econômica do ativo. Chamar um token de “utilidade” não resolve sozinho sua classificação. Participação societária e token devem ser examinados separadamente.</criptoativos>
+    <prestacao_de_servicos fonte="cvm-decreto">A análise deverá distinguir a emissão do ativo, a prestação de serviços de ativos virtuais e eventual valor mobiliário. As competências do Banco Central e da CVM variam conforme a atividade e o instrumento.</prestacao_de_servicos>
+    <proxima_revisao>Antes de captação, oferta, custódia ou integração com exchange, obter análise jurídica e contábil do modelo efetivamente escolhido e reconsultar as regras vigentes. As referências abaixo orientam a discussão; este documento não conclui pela aprovação regulatória do projeto.</proxima_revisao>
+  </viabilidade_e_direitos>
+
+  <sustentabilidade estado="hipoteses_a_validar">
+    <principio>A operação precisa ter uma fonte sustentável de receita e custos conhecidos sem depender da valorização de um token.</principio>
+    <possibilidades>Assinatura opcional, cosméticos ou expansões de conteúdo poderão ser comparados depois da validação do jogo. Nenhum modelo comercial foi escolhido.</possibilidades>
+    <custos_a_levantar>Hospedagem, desenvolvimento, arte e áudio, suporte, segurança, assessoria jurídica e contábil e eventual integração financeira.</custos_a_levantar>
+    <dados_ausentes>Não há orçamento aprovado, valuation, receita comprovada, metas de captação, prazo de retorno ou estudo de demanda que sustentem projeções financeiras neste pacote.</dados_ausentes>
+  </sustentabilidade>
+
+  <roteiro>
+    <etapa numero="1" estado="concluida_no_recorte_local">
+      <entrega>Base compatível, conteúdo mínimo e primeira missão.</entrega>
+      <evidencia>Registros locais de 02/10 e rodada identificada de 06/10/2026; ver evidencias.xml.</evidencia>
+    </etapa>
+    <etapa numero="2" estado="planejada">
+      <entrega>Orientação visível, diálogo claro e redução de elementos herdados sem uso.</entrega>
+      <criterio>Um novo jogador conclui a missão seguindo as informações da tela; recompensa permanece única.</criterio>
+    </etapa>
+    <etapa numero="3" estado="planejada">
+      <entrega>Uma etapa adicional do caminho para O Farol Esquecido.</entrega>
+      <criterio>Personagens novos e já concluídos continuam sem bloqueios; repetição e reinício preservam progresso sem duplicar recompensa.</criterio>
+    </etapa>
+    <etapa numero="4" estado="planejada">
+      <entrega>Piloto fechado com revisão de direitos e operação externa.</entrega>
+      <criterio>Dois jogadores em redes distintas, estabilidade observada, restauração de backup comprovada e orçamento aprovado.</criterio>
+    </etapa>
+    <etapa numero="5" estado="proposta">
+      <entrega>Economia interna simulada e estudo societário.</entrega>
+      <criterio>Medir criação e consumo de saldo, testar abuso e duplicidade e definir instrumentos compatíveis com os 51%/49% pretendidos.</criterio>
+    </etapa>
+    <etapa numero="6" estado="condicional">
+      <entrega>Estudo e protótipo de token, caso a utilidade e a viabilidade sejam demonstradas.</entrega>
+      <criterio>Modelo definido, avaliação jurídica, testes sem valor real e revisão de segurança antes de eventual emissão.</criterio>
+    </etapa>
+    <etapa numero="7" estado="condicional">
+      <entrega>Avaliação de listagem em exchange.</entrega>
+      <criterio>Plataforma e requisitos conhecidos, análise concluída, custos aprovados e decisão de listagem documentada. Sem data ou promessa de aprovação.</criterio>
+    </etapa>
+  </roteiro>
+
+  <riscos_e_criterios>
+    <item risco="O recorte ser confuso ou pouco interessante">Observar novos jogadores; medir conclusão, dúvidas e interesse em retornar, sem inventar demanda.</item>
+    <item risco="Duplicação, bots e exploração econômica">Testar invariantes de saldo e inventário antes de qualquer integração com valor real.</item>
+    <item risco="Dependência de recursos herdados">Concluir inventário de direitos e substituir o que não tiver origem e licença adequadas.</item>
+    <item risco="Governança apenas declaratória">Formalizar a estrutura pretendida e seus mecanismos; o XML não substitui contratos ou registros.</item>
+    <item risco="Listagem inviável ou sem liquidez">Manter o jogo viável sem o token e não associar compra a retorno esperado.</item>
+    <item risco="Custos sem receita suficiente">Levantar orçamento e validar a experiência antes de assumir compromissos de operação.</item>
+  </riscos_e_criterios>
+
+  <repositorio>
+    <nome_sugerido>entre-veus-projeto</nome_sugerido>
+    <descricao_sugerida>Visão e documentação XML de Entre Véus, RPG autoral idealizado por Leonardo Marcuzzo; protótipo local e proposta futura de moeda digital.</descricao_sugerida>
+    <conteudo>Documentação, resumo público das evidências e hashes de origem. Sem executáveis, mapas, dumps SQL, configurações privadas ou credenciais.</conteudo>
+    <escopo>O repositório apresenta a ideia e organiza decisões. Hospedar estes documentos no GitHub não coloca o servidor do jogo online nem cria uma exchange.</escopo>
+    <situacao>Repositório público criado em 07/10/2026, com publicação deste pacote autorizada pelo idealizador. O repositório contém documentação; não executa o servidor do jogo.</situacao>
+    <endereco>https://github.com/leonardomarcuzzo95-wq/entre-veus-projeto</endereco>
+    <licenciamento_do_pacote>Nenhuma nova licença ampla sobre o material autoral é escolhida nesta entrega. Antes da publicação, definir a licença pretendida e as condições de contribuição. As licenças dos componentes externos permanecem independentes.</licenciamento_do_pacote>
+  </repositorio>
+
+  <fontes>
+    <fonte id="local-plano" tipo="documento_local" caminho_origem="avaliacao/PLANO_DO_JOGO.md">Conceito, avaliação das bases e distinção entre conteúdo implementado e proposto.</fonte>
+    <fonte id="local-lock" tipo="documento_local" caminho_origem="jogo/atualizacao-1525/infra/dependencies.lock.json">Revisões fixadas do servidor e do cliente. Não incluído integralmente; resumo em evidencias.xml.</fonte>
+    <fonte id="local-evidencias" tipo="resumo_incluido" arquivo="evidencias.xml">Resultados de origem, datas, alcance e SHA-256 dos registros locais.</fonte>
+    <fonte id="local-licencas" tipo="arquivos_locais">Arquivos LICENSE inspecionados em jogo/atualizacao-1525/servidor e jogo/atualizacao-1525/cliente. Nenhum software redistribuído neste pacote.</fonte>
+    <fonte id="cvm-parecer40" tipo="fonte_oficial" consultada_em="2026-10-07" url="https://conteudo.cvm.gov.br/legislacao/pareceres-orientacao/pare040.html">CVM — Parecer de Orientação 40, de 11/10/2022: criptoativos e mercado de valores mobiliários.</fonte>
+    <fonte id="cvm-faq" tipo="fonte_oficial" consultada_em="2026-10-07" url="https://www.gov.br/cvm/pt-br/acesso-a-informacao-cvm/perguntas-frequentes-da-cvm/criptoativos-quando-se-aplicam-as">CVM — Criptoativos: quando se aplicam as regras da CVM?</fonte>
+    <fonte id="cvm-decreto" tipo="fonte_oficial" consultada_em="2026-10-07" url="https://www.gov.br/cvm/pt-br/assuntos/noticias/2023/publicado-decreto-sobre-ativos-virtuais">CVM — Publicado Decreto sobre Ativos Virtuais, 2023. Referência sobre a distinção de competências, não levantamento integral de normas vigentes.</fonte>
+    <fonte id="lei-direitos-autorais" tipo="fonte_oficial" consultada_em="2026-10-07" url="https://www.planalto.gov.br/ccivil_03/leis/l9610.htm">Lei 9.610/1998, especialmente artigos 7º e 8º: expressão de obras e exclusão de ideias abstratas da proteção autoral.</fonte>
+  </fontes>
+
+  <proximas_decisoes>
+    <item>Revisar este dossiê e decidir a visibilidade e o destino do repositório.</item>
+    <item>Confirmar o posicionamento criativo e a melhoria da orientação inicial.</item>
+    <item>Definir forma societária e instrumentos que concretizem a diretriz permanente de 51% para Leonardo Marcuzzo e 49% para os demais participantes.</item>
+    <item>Especificar o problema que uma moeda negociável resolveria para o jogador; só então decidir se ela deve existir e como funcionaria.</item>
+    <item>Manter nome, rede, quantidade e distribuição do token em aberto até essas decisões.</item>
+  </proximas_decisoes>
+</dossie>

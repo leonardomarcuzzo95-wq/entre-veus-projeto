@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifesto versao="1.1" algoritmo="SHA-256" projeto="Entre Véus" data="2026-10-07">
+  <escopo>Pacote documental para GitHub. Os cinco arquivos abaixo e este manifesto formam a entrega. Manifesto sem hash de si mesmo.</escopo>
+  <arquivo bytes="2364" sha256="84e725b09b84a0e3f7a79d5046ce24207f04fdf22cc827c96a14204659e52a76" caminho="README.md" />
+  <arquivo bytes="23886" sha256="7907683893dffa7b020e0992903e2b6d8eaf76625faa4dcabb3673a53c886f4d" caminho="projeto.xml" />
+  <arquivo bytes="3692" sha256="e6fdcafa793a946ad4d4b8a5dcd9b8f092fbdcd0b09ad2f37ea3e68af541c50e" caminho="evidencias.xml" />
+  <arquivo bytes="3323" sha256="5699b2b153b0a8e947a1b2815ae8abbb7ed788f5485ae602dc232b6b0e2a2fee" caminho="PUBLICAR.xml" />
+  <arquivo bytes="249" sha256="befd14fc4f810d9fdf449705b0cd2a11ab8f50d559eaf6973db0d76ee8b1843f" caminho=".gitignore" />
+</manifesto>
