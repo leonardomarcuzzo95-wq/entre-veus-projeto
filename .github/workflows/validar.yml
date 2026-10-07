@@ -16,9 +16,8 @@ jobs:
         with:
           persist-credentials: false
       - name: Preparar interpretador Lua para sintaxe e testes puros
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y luajit
+        timeout-minutes: 2
+        run: sudo apt-get -o Acquire::Retries=1 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20 install -y --no-install-recommends luajit
       - name: Validar arquivos permitidos, sintaxe e regressao dos relatorios
         shell: pwsh
         run: ./versionamento/Verificar-Repositorio.ps1 -CheckIndex -RequireLua
